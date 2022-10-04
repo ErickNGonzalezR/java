@@ -1,0 +1,131 @@
+COMIENZO DE TODOS LOS PROYECTOS
+	public static void main (String [] args){
+	}
+
+TIPOS DE VARIABLES
+	byte		ENTERO			-128 A 127
+	short		ENTERO			-32768 A 32767
+	int		ENTERO			2.000.000.000
+	long		ENTERO			MUY GRANDE
+ 	float		DECIMAL SIMPLE 		MUY GRANDE		EL NUMERO SIEMPRE TIENE QUE TENER UNA f AL FINAL 
+	double		DECIMAL DOBLE		MUY GRANDE
+	char		CARACTER SIMPLE
+	String		CADENA DE TEXTO
+	boolean		TRUE O FALSE
+
+OPERADORERES LOGICOS 
+	& 	AND	 Y 	implica condiciones simultaneas
+	| 	OR	 O 	una condicion, o la otra , o ambas
+	~ 	NOT	 NO	negacion de una condicion
+
+OPERADORES RELACIONALES
+	== 	EQUAL 			IGUAL
+	> 	GREATER THAN 		MAYOR QUE
+	>= 	GREATER OR EQUAL 	MAYOR O IGUAL
+	< 	LESS THAN 		MENOR QUE	
+	<= 	LESS OR EQUAL 		MENOR O IGUAL
+	~= 	NOT EQUAL 		NO IGUAL
+	!= 				DISTINTO
+ 	=				ASIGNACION
+OPERADORES ARITMETICOS
+	+ 	SUMA 			NUM 1 + NUM 2 
+	++ 	INCREMENTO 		NUM 1 ++ 	PRIMERO SE ASIGNA Y DESPUES SE INCREMENTA
+	++ 	INCREMENTO 		++ NUM 1  	PRIMERO SE INCREMENTA Y DESPUES SE ASIGNA
+	- 	RESTA 			NUM 1 - NUM 2
+	-- 	DECREMENTO 		NUM 1 --	PRIMERO SE ASIGNA Y DESPUES SE RESTA
+	-- 	DECREMENTO 		-- NUM 1 	PRIMERO SE RESTA Y DESPUES SE ASIGNA
+	* 	MULTIPLICACION 		NUM 1 * NUM 2 
+	/ 	DIVISION 		NUM 1 / NUM 2 
+	% 	RESTO 			NUM 1 % NUM 2
+	^	POTENCIA 		X ^ n EL VALOR DE X ELEVADO A LA n 
+
+OPERADORES ARITMETICOS CON ASIGNACION
+	numero = numero + 5;
+	numero += 5; 
+	numero = numero - 5;
+	numero -= 5;
+	numero = numero * 5;
+	numero *= 5;
+	numero = numero / 5;
+	numero /= 5;
+	numero = numero % 5;
+	numero %= 5;	
+
+LINEA DE SAIDA DE DATOS
+	System.out.println("  ");
+
+DECLARACION DE CONSTANTES
+	Se coloca la palabra final al principio cuan do se declara una variable
+	final int numero = 10 ; 
+
+ENTRADA Y SALIDA DE DATOS
+	jOptionPane.showInputDialog(¨ ¨);
+	JOptionPane.showMessage(null, ¨   ¨);
+
+CONVERTIR VARIABLES 
+	String A int , char , double , float
+		Integer.parseInt(); 
+		jOptionPane.showInputDialog(¨digite un caracter: ¨).charAT.(0);
+		Double.parseDouble();
+		Float.parseFloat();
+	
+CLASE MATH
+	COMO HACER UNA RAIZ CUARDRADA
+		double variable = Math.sqrt(numero);
+	COMO HACERUNA POTENCIACION
+		double base , exponente;
+		double resultado = Math.pow(base , exponente);
+	COMO REDONDEAR UN NUMERO
+		double numero = 4.56;
+		long resultado = Math.round(numero); // 5
+		
+		float numero = 4.56f;
+		int resultado = Math.rount(numero); // 5  
+	COMO OBTENER UN NUMERO ALEATORIO
+		double numero = Math.random()	
+		
+		NUMEROS ENTEROS
+		CLASE
+		import java.util.Random;
+		
+
+		Random claseRandom = new Random();
+		int n = claseRandom.nextInt(101);
+		
+
+CONDICIONALES
+IF 
+	if (condiconal){
+		instruccion;
+	}			
+	else{
+		instruccion;	
+	}	
+
+SWITCH
+	switch(dato){
+	case 1:instrucciones;
+		break
+	caso 2:instrucciones;
+		break
+	case n :instrucciones;
+		break
+	default:caso contrario;
+		break;
+	}
+
+CICLOS
+WHILE
+	while(condicion){
+		instrucciones;
+	}
+
+DO WHILE
+	do{
+		instrucciones;
+	}while(condicional);
+
+FOR
+	for(iniciacion de la variable ; condicional;aumento o decremento){
+		instrucciones;
+	}
